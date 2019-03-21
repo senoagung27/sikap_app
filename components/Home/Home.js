@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import { AppRegistry, View, Image, RefreshControl, ListView } from 'react-native';
 import { TabNavigator } from "react-navigation";
-import { Container, Header, Drawer,H1, Content, List, ListItem, DeckSwiper, Left, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
-
-
-
+import { Container, Header, Accordion , Drawer,H1, Content, List, ListItem, DeckSwiper, Left, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
+const dataArray = [
+  { title: "First Element", content: "Lorem ipsum dolor sit amet" },
+  { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
+  { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
+];
 export default class Home extends React.Component {
-  constructor(){
-    super()
-    this.data = [
-      {time: '09:00', title: 'Event 1', description: 'Event 1 Description'},
-      {time: '10:45', title: 'Event 2', description: 'Event 2 Description'},
-      {time: '12:00', title: 'Event 3', description: 'Event 3 Description'},
-      {time: '14:00', title: 'Event 4', description: 'Event 4 Description'},
-      {time: '16:30', title: 'Event 5', description: 'Event 5 Description'}
-    ]
-  } 
   render () {
+    var date = new Date().getDate();
+    var month = new Date().getMonth() + 1;
+    var year = new Date().getFullYear();
+    var tanggal = date + '-' + month + '-' + year;
+
     return (
       
 
@@ -36,76 +33,43 @@ export default class Home extends React.Component {
         />
           </Body>
         </Header>
-        
-        
-        <Content style={{ backgroundColor: 'white' }}>
         <List>
-            <Card style={{marginTop:200, marginRight:200}}>
-              <CardItem style={{ backgroundColor: 'white' }}>
+            <Card style={{height:100}}>
+              <CardItem style={{ backgroundColor: '#fcee21' }}>
                 <Body>
+                <H1 style={{left:90}}>
+                    Putra Wahyu
+                </H1>
+                <Text style={{left:100}}>Kelas XII A (IPA)</Text>
                   <Image 
-                  source={{ uri: 'https://img.icons8.com/office/2x/money.png' }} 
-                  style={{ height:50, width: 50 }} />
-                  <Text >
-                    Keuangan
-                </Text>
+                  source={{ uri: 'https://i.imgur.com/zBwTWJo.png' }} 
+                  style={{ height:50, width: 50,bottom:50,left:30 }} />
+                
                 </Body>
               </CardItem>
             </Card>
-            
-          </List>
-         
-         
-          <List>
-            <Card style={{marginTop:-100, marginLeft:220}}>
+            </List>
+            <List>
+            <Card style={{height:100}}>
               <CardItem style={{ backgroundColor: 'white' }}>
                 <Body>
-                  <Image 
-                  source={{ uri: 'https://img.icons8.com/office/2x/test-failed.png' }} 
-                  style={{ height:50, width: 50 }} />
-                  <Text >
-                    Absensi
-                </Text>
+                <H1>
+                    Hari ini
+                </H1>
+                <Text>{tanggal}</Text>
+                  
                 </Body>
               </CardItem>
             </Card>
-            
-          </List>
-
-          <List>
-            <Card style={{marginTop:5, marginRight:200}}>
-              <CardItem style={{ backgroundColor: 'white' }}>
-                <Body>
-                  <Image 
-                  source={{ uri: 'https://img.icons8.com/office/2x/exam.png' }} 
-                  style={{ height:50, width: 50 }} />
-                  <Text >
-                    Daftar Nilai
-                </Text>
-                </Body>
-              </CardItem>
-            </Card>
-            
-          </List>
-          <List>
-            <Card style={{marginTop:-100, marginLeft:220}}>
-              <CardItem style={{ backgroundColor: 'white' }}>
-                <Body>
-                  <Image 
-                  source={{ uri: 'https://img.icons8.com/office/2x/conference-call.png' }} 
-                  style={{ height:50, width: 50 }} />
-                  <Text >
-                    Daftar Siswa
-                </Text>
-                </Body>
-              </CardItem>
-            </Card>
-            
-          </List>
-
-          
-          
-         
+            </List>
+        <Content padder>
+          <Accordion
+            dataArray={dataArray}
+            icon="add"
+            expandedIcon="remove"
+            iconStyle={{ color: "green" }}
+            expandedIconStyle={{ color: "red" }}
+          />
         </Content>
         
         
