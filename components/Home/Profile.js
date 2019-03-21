@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { AppRegistry, View, Image, RefreshControl, ListView } from 'react-native';
 import { TabNavigator } from "react-navigation";
 import { Container, Header, Drawer, Content, List, ListItem,H1,Row, Left, Body, Card, CardItem,Grid, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
-import SingleCardView from 'react-native-simple-card';
-import { Col } from 'react-native-easy-grid';
+
 
 export default class Home extends React.Component {
 
