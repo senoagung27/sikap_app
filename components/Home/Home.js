@@ -1,64 +1,118 @@
 import React, { Component } from 'react';
 import { AppRegistry, View, Image, RefreshControl, ListView } from 'react-native';
 import { TabNavigator } from "react-navigation";
-import { Container, Header, Drawer, Content, List, ListItem, Left, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
+import { Container, Header, Drawer,H1, Content, List, ListItem, DeckSwiper, Left, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
+
+
 
 export default class Home extends React.Component {
-
-  render() {
-    var date = new Date().getDate();
-    var month = new Date().getMonth() + 1;
-    var year = new Date().getFullYear();
-    var tanggal = date + '-' + month + '-' + year;
-
+  constructor(){
+    super()
+    this.data = [
+      {time: '09:00', title: 'Event 1', description: 'Event 1 Description'},
+      {time: '10:45', title: 'Event 2', description: 'Event 2 Description'},
+      {time: '12:00', title: 'Event 3', description: 'Event 3 Description'},
+      {time: '14:00', title: 'Event 4', description: 'Event 4 Description'},
+      {time: '16:30', title: 'Event 5', description: 'Event 5 Description'}
+    ]
+  } 
+  render () {
     return (
+      
 
-      <Container style={{ backgroundColor: '#ffdab9' }}>
-        <Header>
+      <Container style={{ backgroundColor: 'white' }}>
+        <Header style={{backgroundColor:'white'}}>
           <Left>
-            <Button
-              transparent
+            <Button 
+            transparent
               onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-              <Icon name='menu' />
+              <Icon style={{color:'#00aeef'}} name='menu' />
             </Button>
           </Left>
           <Body>
-            <Title>Pariwisata online</Title>
+          <Image
+          style={{width: 110, height: 80 ,right:60}}
+          source={{uri: 'https://i.imgur.com/Kv28RBz.png'}}
+        />
           </Body>
         </Header>
-        <Content style={{ backgroundColor: '#ffdab9' }}>
-          <List>
-            <Card style={{ flex: 0 }}>
-              <CardItem style={{ backgroundColor: '#ffdab9' }}>
-                <Left>
-                  <Thumbnail source={{ uri: 'http://tourism.sumbawakab.go.id/assets/media/photo/wisatakita.jpg' }} />
-                  <Body>
-                    <Text>Pariwisata Malang Online</Text>
-                    <Text note>{tanggal}</Text>
-                  </Body>
-                </Left>
-              </CardItem>
-              <CardItem style={{ backgroundColor: '#ffdab9' }}>
+        
+        
+        <Content style={{ backgroundColor: 'white' }}>
+        <List>
+            <Card style={{marginTop:200, marginRight:200}}>
+              <CardItem style={{ backgroundColor: 'white' }}>
                 <Body>
-                  <Image source={{ uri: 'https://3.bp.blogspot.com/-jzwDgtK6Sno/V9QbjrtDx_I/AAAAAAAAJ3I/XtZWM51h26oAYYWzFPs3Vpu9_Y85hga3gCLcB/s1600/IMG00624-20150704-1356.jpg' }} style={{ height: 200, width: 400, flex: 1, padding: 30 }} />
-                  <Text>
-                    Selamat datang di Pariwisata Malang online
-                      Powered By Sistem Informasi ITATS
+                  <Image 
+                  source={{ uri: 'https://img.icons8.com/office/2x/money.png' }} 
+                  style={{ height:50, width: 50 }} />
+                  <Text >
+                    Keuangan
                 </Text>
                 </Body>
               </CardItem>
-              <CardItem style={{ backgroundColor: '#ffdab9' }}>
-                <Left>
-                  <Button transparent textStyle={{ color: '#87838B' }}>
-                    <Icon name="logo-github" />
-                    <Text>2017</Text>
-                  </Button>
-                </Left>
+            </Card>
+            
+          </List>
+         
+         
+          <List>
+            <Card style={{marginTop:-100, marginLeft:220}}>
+              <CardItem style={{ backgroundColor: 'white' }}>
+                <Body>
+                  <Image 
+                  source={{ uri: 'https://img.icons8.com/office/2x/test-failed.png' }} 
+                  style={{ height:50, width: 50 }} />
+                  <Text >
+                    Absensi
+                </Text>
+                </Body>
               </CardItem>
             </Card>
+            
           </List>
+
+          <List>
+            <Card style={{marginTop:5, marginRight:200}}>
+              <CardItem style={{ backgroundColor: 'white' }}>
+                <Body>
+                  <Image 
+                  source={{ uri: 'https://img.icons8.com/office/2x/exam.png' }} 
+                  style={{ height:50, width: 50 }} />
+                  <Text >
+                    Daftar Nilai
+                </Text>
+                </Body>
+              </CardItem>
+            </Card>
+            
+          </List>
+          <List>
+            <Card style={{marginTop:-100, marginLeft:220}}>
+              <CardItem style={{ backgroundColor: 'white' }}>
+                <Body>
+                  <Image 
+                  source={{ uri: 'https://img.icons8.com/office/2x/conference-call.png' }} 
+                  style={{ height:50, width: 50 }} />
+                  <Text >
+                    Daftar Siswa
+                </Text>
+                </Body>
+              </CardItem>
+            </Card>
+            
+          </List>
+
+          
+          
+         
         </Content>
+        
+        
+      
       </Container>
+      
+      
     );
   }
 
