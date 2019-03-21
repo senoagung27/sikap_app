@@ -59,7 +59,7 @@ export default class input extends React.Component {
         const {navigate} = this.props.navigation;
         return (
 
-            <Container style={{ backgroundColor: '#ffdab9' }}>
+            <Container style={{ backgroundColor: '#dfe6e9' }}>
                 <Header>
                     <Left>
                         <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
@@ -67,16 +67,16 @@ export default class input extends React.Component {
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Pariwisata online</Title>
+                        <Title>Sikap.In</Title>
                     </Body>
                 </Header>
-                <Content style={{ backgroundColor: '#ffdab9' }}>
+                <Content style={{ backgroundColor: '#ecf0f1' }}>
                 <Card style={{flex: 0}}>
-                <CardItem style={{ backgroundColor: '#ffdab9' }}>
-                <Content style={{ backgroundColor: '#ffdab9' }}>
+                <CardItem style={{ backgroundColor: '#dfe6e9' }}>
+                <Content style={{ backgroundColor: '#dfe6e9' }}>
                     <List>
-                        <ListItem itemDivider style={{ backgroundColor: '#ffdab9' }} >
-                            <Text>Form Input Tempat Wisata</Text>
+                        <ListItem itemDivider style={{ backgroundColor: '#dfe6e9' }} >
+                            <Text>Form Input</Text>
                         </ListItem>
                         <Form>
                             <Item floatingLabel>

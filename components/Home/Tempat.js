@@ -54,7 +54,7 @@ export default class Tempat extends React.Component {
       );
     }
     return (
-      <Container style={{ backgroundColor: '#ffdab9' }}>
+      <Container style={{ backgroundColor: '#ecf0f1' }}>
         <Header>
           <Left>
             <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
@@ -62,7 +62,7 @@ export default class Tempat extends React.Component {
             </Button>
           </Left>
           <Body>
-            <Title>Pariwisata online</Title>
+            <Title>Sikap</Title>
           </Body>
         </Header>
         <ListView
@@ -75,15 +75,15 @@ export default class Tempat extends React.Component {
           dataSource={this.state.dataSource}
           renderRow={(rowData) =>
             <Card style={{ flex: 0 }}>
-              <CardItem style={{ backgroundColor: '#ffdab9' }}>
+              <CardItem style={{ backgroundColor: '#ecf0f1' }}>
                 <Left>
-                  <Thumbnail source={{ uri: 'http://tourism.sumbawakab.go.id/assets/media/photo/wisatakita.jpg' }} />
+                  <Thumbnail source={{ uri: '#' }} />
                   <Body>
                     <Text>{rowData.Nama}</Text>
                   </Body>
                 </Left>
               </CardItem>
-              <CardItem style={{ backgroundColor: '#ffdab9' }}>
+              <CardItem style={{ backgroundColor: '#ecf0f1' }}>
                 <Body>
                 <Grid>
                     <Col size={1}>
