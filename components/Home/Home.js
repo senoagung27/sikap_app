@@ -18,19 +18,16 @@ export default class Home extends React.Component {
       
 
       <Container style={{ backgroundColor: 'white' }}>
-        <Header style={{backgroundColor:'white'}}>
+        <Header style={{backgroundColor:'#2AC4F3'}}>
           <Left>
             <Button 
             transparent
               onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-              <Icon style={{color:'#00aeef'}} name='menu' />
+              <Icon style={{color:'white'}} name='menu' />
             </Button>
           </Left>
           <Body>
-          <Image
-          style={{width: 110, height: 80 ,right:60}}
-          source={{uri: 'https://i.imgur.com/Kv28RBz.png'}}
-        />
+         <H1 style={{color:'white'}}>HOME</H1>
           </Body>
         </Header>
         <List>
