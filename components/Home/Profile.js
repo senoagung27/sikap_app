@@ -4,7 +4,7 @@ import { TabNavigator } from "react-navigation";
 import { Container, Header, Drawer, Content, List, ListItem,H1,Row, Left, Body, Card, CardItem,Grid, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
 
 
-export default class Home extends React.Component {
+export default class Profile extends React.Component {
 
   render() {
     var date = new Date().getDate();
@@ -15,20 +15,19 @@ export default class Home extends React.Component {
     return (
 
       <Container style={{ backgroundColor: 'white' }}>
-        <Header style={{backgroundColor:'white'}}>
+        <Header style={{backgroundColor:'#2AC4F3'}}>
           <Left>
             <Button 
             transparent
               onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-              <Icon style={{color:'blue'}} name='menu' />
+              <Icon style={{color:'white'}} name='menu' />
             </Button>
           </Left>
           <Body>
-          <Image
-        
-          source={{uri: 'https://i.pinimg.com/originals/9a/be/25/9abe2519e3c7d05f4457b997a3988b8d.png'}}
-        />
+          
+         <H1 style={{color:'white'}}>PROFILE</H1>
           </Body>
+          
         </Header>
         <Content style={{ backgroundColor: 'white' }}>
         <List>
