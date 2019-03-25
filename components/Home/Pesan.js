@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, View, Image, RefreshControl, ListView } from 'react-native';
 import { TabNavigator } from "react-navigation";
-import { Container, Header, Drawer, Content, List, ListItem, Left, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
+import { Container, Header, Drawer, Content,H1, List, ListItem, Left, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
 
 
 export default class Pesan extends React.Component {
@@ -15,19 +15,16 @@ export default class Pesan extends React.Component {
     return (
 
       <Container style={{ backgroundColor: 'white' }}>
-        <Header style={{backgroundColor:'white'}}>
+        <Header style={{backgroundColor:'#2AC4F3'}}>
           <Left>
             <Button 
             transparent
               onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-              <Icon style={{color:'blue'}} name='menu' />
+              <Icon style={{color:'white'}} name='menu' />
             </Button>
           </Left>
           <Body>
-          <Image
-        
-          source={{uri: 'https://i.pinimg.com/originals/9a/be/25/9abe2519e3c7d05f4457b997a3988b8d.png'}}
-        />
+          <H1 style={{color:'white'}}>PESAN</H1>
           </Body>
         </Header>
 
@@ -54,7 +51,7 @@ export default class Pesan extends React.Component {
               <Text>Kehadiran</Text>
                   <Icon active style={{left:255}} name="navigate" />
                 <Text note style={{top:20, left:200}}>Perkecil</Text>
-             </CardItem>
+            </CardItem>
             <CardItem>
               <Body>
                 <Text>Waktu</Text><Text style={{bottom:28 ,left:150}}>06.30 AM</Text>
