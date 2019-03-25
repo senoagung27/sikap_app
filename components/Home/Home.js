@@ -1,36 +1,7 @@
 import React, { Component } from 'react'
-import {
-  AppRegistry,
-  View,
-  Image,
-  RefreshControl,
-  ListView
-} from 'react-native'
+import {AppRegistry,View,Image,RefreshControl,ListView} from 'react-native'
 import { TabNavigator } from 'react-navigation'
-import {
-  Container,
-  Header,
-  Accordion,
-  Drawer,
-  H1,
-  Content,
-  List,
-  ListItem,
-  DeckSwiper,
-  Left,
-  Body,
-  Card,
-  CardItem,
-  Thumbnail,
-  Right,
-  Button,
-  Icon,
-  Title,
-  Text,
-  Tab,
-  Footer,
-  FooterTab
-} from 'native-base'
+import {Container,Header,Accordion,Drawer,H1,Content,List,ListItem,DeckSwiper,Left,Body,Card,CardItem,Thumbnail,Right,Button,Icon,Title,Text,Tab,Footer,FooterTab} from 'native-base'
 const dataArray = [
   { title: 'First Element', content: 'Lorem ipsum dolor sit amet' },
   { title: 'Second Element', content: 'Lorem ipsum dolor sit amet' },
