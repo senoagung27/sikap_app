@@ -25,7 +25,7 @@ export default class Profile extends React.Component {
           </Left>
           <Body>
           
-         <H1 style={{color:'white'}}>PROFILE</H1>
+        <H1 style={{color:'white'}}>PROFILE</H1>
           </Body>
           
         </Header>
