@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { AppRegistry, View, Image } from 'react-native';
-import { Container, Header, Drawer, Content, List, ListItem, Left, Separator, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
+import { Container, Header, Drawer, Content, List,Accordion, ListItem, Left, Separator, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
+const dataArray = [
+  { title: "Pertanyaan 1", content: "Lorem ipsum dolor sit amet" },
+  { title: "Pertanyaan 2", content: "Lorem ipsum dolor sit amet" },
+  { title: "Pertanyaan 3", content: "Lorem ipsum dolor sit amet" }
+];
 export default class Bantuan extends React.Component {
   render() {
     return (
@@ -18,41 +23,15 @@ export default class Bantuan extends React.Component {
           <Body>
           </Body>
         </Header>
-        <Content style={{ backgroundColor: 'white' }}>
-          <List>
-            <Card style={{ flex: 0 }}>
-              
-            <Separator bordered style={{backgroundColor:'grey'}}>
-            <Text style={{fontSize:12, color:'black'}}>Pertanyaan yang Sering Diajukan</Text>
+        <Content padder>
+        <Separator bordered>
+            <Text>MIDFIELD</Text>
           </Separator>
-              <ListItem icon>
-            <Body>
-              <Text>Pertanyaan 1</Text>
-            </Body>
-            <Right>
-              <Icon  name="arrow-forward" />
-            </Right>
-          </ListItem>
-          <ListItem icon>
-            <Body>
-              <Text>Pertanyaan 2</Text>
-            </Body>
-            <Right>
-              <Icon active name="arrow-forward" />
-            </Right>
-          </ListItem>
-          
-          <ListItem icon>
-            <Body>
-              <Text>Pertanyaan 3</Text>
-            </Body>
-            <Right>
-              <Icon active name="arrow-forward" />
-            </Right>
-          </ListItem>
-          
-          <Separator bordered style={{backgroundColor:'grey'}}>
-            <Text style={{fontSize:12, color:'black'}}>Butuh Bantuan ?</Text>
+          <Text></Text>
+          <Accordion dataArray={dataArray} expanded={0}/>
+          <Text></Text>
+          <Separator bordered>
+            <Text>MIDFIELD</Text>
           </Separator>
           <ListItem icon>
             <Left>
@@ -61,17 +40,13 @@ export default class Bantuan extends React.Component {
               </Button>
             </Left>
             <Body>
-              <Text>Hubungin Kami</Text>
+            <Text>Hubungin Kami</Text>
               <Text note style={{fontSize:10}}>Hubungin Kami Untuk Informasi lebih lanjut</Text>
             </Body>
             <Right>
               <Icon active name="arrow-forward" />
             </Right>
           </ListItem>
-          
-          
-            </Card>
-          </List>
         </Content>
         <Image
           style={{width: 150, height: 100 , left:120 , bottom:190}}
