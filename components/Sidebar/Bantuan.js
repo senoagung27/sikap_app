@@ -3,7 +3,7 @@ import { AppRegistry, View, Image } from 'react-native';
 import { Container, Header, Drawer, Content, List,Accordion, ListItem, Left, Separator, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 const dataArray = [
-  { title: "Pertanyaan 1", content: "Lorem ipsum dolor sit amet" },
+  { title: "Pertanyaan 1", content: "Sekolah menjadi Lembaga formal yang menyelenggarakan Pendidikan. Selain sekolah peran penting orangtua dalam Pendidikan anak merupakan titik sentral dalam keberhasilan pendidikan anak. SIKAP merupakan solusi penyampaian informasioleh sekolah kepada orangtua siswa dengan mudah, cepat dan akurat" },
   { title: "Pertanyaan 2", content: "Lorem ipsum dolor sit amet" },
   { title: "Pertanyaan 3", content: "Lorem ipsum dolor sit amet" }
 ];
@@ -25,13 +25,13 @@ export default class Bantuan extends React.Component {
         </Header>
         <Content padder>
         <Separator bordered>
-            <Text>MIDFIELD</Text>
+            <Text>Pertanyaan yang sering diajukan</Text>
           </Separator>
           <Text></Text>
           <Accordion dataArray={dataArray} expanded={0}/>
           <Text></Text>
           <Separator bordered>
-            <Text>MIDFIELD</Text>
+            <Text>Butuh Bantuan ?</Text>
           </Separator>
           <ListItem icon>
             <Left>
