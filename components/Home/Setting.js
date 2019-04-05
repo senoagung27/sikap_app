@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, View,StyleSheet, Image } from 'react-native';
 import { Container, Header, Drawer, Content, List, ListItem, Left, Separator, Body, Card, CardItem, Thumbnail, Right, Button, Icon, Title, Text, Tab, Footer, FooterTab } from 'native-base';
-
+import ViewMoreText from 'react-native-view-more-text';
 
 export default class Setting extends React.Component {
   render() {

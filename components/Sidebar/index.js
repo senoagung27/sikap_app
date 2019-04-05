@@ -15,7 +15,7 @@ const SidebarRouter = DrawerNavigator(
     Tentangkami: { screen: TentangkamiScreen },
   },
   {
-    contentComponent: props => <Sidebar {...props} />
+    contentComponent: props => <Sidebar {...props} />,
   }
 );
 
