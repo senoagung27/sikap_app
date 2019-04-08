@@ -54,75 +54,126 @@ export default class Pesan extends React.Component {
         </Header>
 
         <Content style={{ backgroundColor: "white" }}>
-          <Card>
-            <CardItem header>
-              <Text>Pembayaran SPP</Text>
-              <Icon active style={{ left: 200 }} name="navigate" />
-              <Text note style={{ top: 20, left: 150 }}>
-                Perkecil
-              </Text>
-            </CardItem>
-            <CardItem>
+        
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
               <Body>
-                <Text>Jumlah</Text>
-                <Text style={{ bottom: 28, left: 150 }}>1.500.000</Text>
-                <Text>Status</Text>
-                <Text style={{ bottom: 28, left: 150 }}>Lunas</Text>
-                <Text>Tagihan</Text>
-                <Text style={{ bottom: 28, left: 150 }}>Juli</Text>
-                <Text>Tanggal</Text>
-                <Text style={{ bottom: 28, left: 150 }}>{tanggal}</Text>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
-            </CardItem>
-          </Card>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
 
-          <Card>
-            <CardItem header>
-              <Text>Kehadiran</Text>
-              <Icon active style={{ left: 255 }} name="navigate" />
-              <Text note style={{ top: 20, left: 200 }}>
-                Perkecil
-              </Text>
-            </CardItem>
-            <CardItem>
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
               <Body>
-                <Text>Waktu</Text>
-                <Text style={{ bottom: 28, left: 150 }}>06.30 AM</Text>
-                <Text>Status</Text>
-                <Text style={{ bottom: 28, left: 150 }}>Tepat Waktu</Text>
-                <Text>Aktivitas</Text>
-                <Text style={{ bottom: 28, left: 150 }}>
-                  Upacara Dan Praktek Sholat
-                </Text>
-                <Text>Tanggal</Text>
-                <Text style={{ bottom: 28, left: 150 }}>{tanggal}</Text>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
-            </CardItem>
-          </Card>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
 
-          <Card>
-            <CardItem header>
-              <Text>Kehadiran</Text>
-              <Icon active style={{ left: 255 }} name="navigate" />
-              <Text note style={{ top: 20, left: 200 }}>
-                Perkecil
-              </Text>
-            </CardItem>
-            <CardItem>
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
               <Body>
-                <Text>Waktu</Text>
-                <Text style={{ bottom: 28, left: 150 }}>06.30 AM</Text>
-                <Text>Status</Text>
-                <Text style={{ bottom: 28, left: 150 }}>Tepat Waktu</Text>
-                <Text>Aktivitas</Text>
-                <Text style={{ bottom: 28, left: 150 }}>
-                  Upacara Dan Praktek Sholat
-                </Text>
-                <Text>Tanggal</Text>
-                <Text style={{ bottom: 28, left: 150 }}>{tanggal}</Text>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
-            </CardItem>
-          </Card>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
+
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
+              <Body>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
+              </Body>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
+
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
+              <Body>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
+              </Body>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
+
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
+              <Body>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
+              </Body>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
+
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
+              <Body>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
+              </Body>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
+
+          <List>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'Image URL' }} />
+              </Left>
+              <Body>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
+              </Body>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
         </Content>
       </Container>
     );

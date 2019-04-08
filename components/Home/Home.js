@@ -78,7 +78,7 @@ export default class Home extends React.Component {
               <Body>
                 <H1>Hari ini</H1>
                 <Text>{tanggal}</Text>
-              </Body>
+              </Body>  
             </CardItem>
           </Card>
         </List>
