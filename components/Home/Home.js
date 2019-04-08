@@ -55,7 +55,7 @@ export default class Home extends React.Component {
             </Button>
           </Left>
           <Body>
-            <H1 style={{ color: "white" }}>HOME</H1>
+            <H1 style={{ color: "white" }}>SIKAP</H1>
           </Body>
         </Header>
         <List>
@@ -78,7 +78,7 @@ export default class Home extends React.Component {
               <Body>
                 <H1>Hari ini</H1>
                 <Text>{tanggal}</Text>
-              </Body>
+              </Body>  
             </CardItem>
           </Card>
         </List>

@@ -22,17 +22,17 @@ import {
   Footer,
   FooterTab,
 } from "native-base";
+import Kehadiran from "./Kehadiran";
 import Pesan from "./Pesan";
-import Profile from "./Profile";
 import Home from "./Home";
-import Setting from "./Setting";
+import Nilai from "./Nilai";
 
 export default (MainScreenNavigator = TabNavigator(
   {
     Home: { screen: Home },
-    Profile: { screen: Profile },
     Pesan: { screen: Pesan },
-    Setting: { screen: Setting },
+    Kehadiran: { screen: Kehadiran },
+    Nilai: { screen: Nilai },
   },
   {
     tabBarPosition: "bottom",
@@ -47,40 +47,46 @@ export default (MainScreenNavigator = TabNavigator(
               style={{ backgroundColor: "#2AC4F3" }}
             >
               <Image
-                style={{ width: 50, height: 50 }}
+                style={{ width: 35, height: 35 }}
                 source={{ uri: "https://i.imgur.com/6H1I7Z0.png" }}
               />
+              <Text>Home</Text>
             </Button>
             <Button
               vertical
               active={props.navigationState.index === 1}
-              onPress={() => props.navigation.navigate("Profile")}
-              style={{ backgroundColor: "#2AC4F3" }}
-            >
-              <Image
-                style={{ height: 50, width: 50 }}
-                source={require("../../assets/profile.png")}
-              />
-            </Button>
-            <Button
-              vertical
-              active={props.navigationState.index === 2}
               onPress={() => props.navigation.navigate("Pesan")}
               style={{ backgroundColor: "#2AC4F3" }}
             >
               <Image
-                style={{ width: 50, height: 50 }}
+                style={{ height: 35, width: 35 }}
                 source={{ uri: "https://i.imgur.com/tIRxrIF.png" }}
               />
+              <Text>Pesan</Text>
+            </Button>
+            <Button
+              vertical
+              active={props.navigationState.index === 2}
+              onPress={() => props.navigation.navigate("Kehadiran")}
+              style={{ backgroundColor: "#2AC4F3" }}
+            >
+              <Image
+                style={{ width: 35, height: 35 }}
+                source={{ uri: "https://i.imgur.com/cam3znM.png" }}
+              />
+              <Text>Kehadiran</Text>
             </Button>
             <Button
               vertical
               active={props.navigationState.index === 3}
-              onPress={() => props.navigation.navigate("Setting")}
+              onPress={() => props.navigation.navigate("Nilai")}
               style={{ backgroundColor: "#2AC4F3" }}
             >
-              <Icon name="settings" />
-              <Text>Setting</Text>
+              <Image
+                style={{ width: 35, height: 35 }}
+                source={{ uri: "https://i.imgur.com/2jsLpTT.png" }}
+              />
+              <Text>Nilai</Text>
             </Button>
           </FooterTab>
         </Footer>
