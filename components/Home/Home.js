@@ -55,7 +55,7 @@ export default class Home extends React.Component {
             </Button>
           </Left>
           <Body>
-            <H1 style={{ color: "white" }}>HOME</H1>
+            <H1 style={{ color: "white" }}>SIKAP</H1>
           </Body>
         </Header>
         <List>
