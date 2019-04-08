@@ -72,24 +72,45 @@ export default class Home extends React.Component {
             </CardItem>
           </Card>
         </List>
-        <List>
-          <Card style={{ height: 100 }}>
-            <CardItem style={{ backgroundColor: "white" }}>
+        
+        <Content>
+          
+        <Card style={{ height: 250, width:200 }}>
+            <CardItem style={{ backgroundColor: 'white' }}>
               <Body>
-                <H1>Hari ini</H1>
-                <Text>{tanggal}</Text>
-              </Body>  
+              </Body>
             </CardItem>
           </Card>
-        </List>
-        <Content padder>
-          <Accordion
-            dataArray={dataArray}
-            icon="add"
-            expandedIcon="remove"
-            iconStyle={{ color: "green" }}
-            expandedIconStyle={{ color: "red" }}
-          />
+          <Card style={{ height: 250, width:200, bottom: 100, left: 150 }}>
+            <CardItem style={{ backgroundColor: 'white' }}>
+              <Body>
+              </Body>
+            </CardItem>
+          </Card>
+        <Card>
+            <CardItem>
+              
+              <Icon active name="logo-googleplus" />
+              <Text>Google Plus</Text>
+              <Right>
+                <Icon name="arrow-forward" />
+              </Right>
+             </CardItem>
+             <CardItem>
+              <Icon active name="logo-googleplus" />
+              <Text>Google Plus</Text>
+              <Right>
+                <Icon name="arrow-forward" />
+              </Right>
+             </CardItem>
+             <CardItem>
+              <Icon active name="logo-googleplus" />
+              <Text>Google Plus</Text>
+              <Right>
+                <Icon name="arrow-forward" />
+              </Right>
+             </CardItem>
+           </Card>
         </Content>
       </Container>
     );
