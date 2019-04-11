@@ -18,6 +18,8 @@ import {
   Left,
   Body,
   Card,
+  Item,
+  Input,
   CardItem,
   Thumbnail,
   Right,
@@ -49,12 +51,16 @@ export default class Pesan extends React.Component {
             </Button>
           </Left>
           <Body>
-            <H1 style={{ color: "white" }}>PESAN</H1>
+            <H1 style={{ color: "white" }}>SIKAP</H1>
           </Body>
         </Header>
 
         <Content style={{ backgroundColor: "white" }}>
         
+        <Item>
+            <Input placeholder='PENCARIAN'/>
+            <Icon active name='search' />
+          </Item>
           <List>
             <ListItem avatar>
               <Left>

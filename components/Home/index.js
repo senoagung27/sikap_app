@@ -38,7 +38,7 @@ export default (MainScreenNavigator = TabNavigator(
     tabBarPosition: "bottom",
     tabBarComponent: props => {
       return (
-        <Footer style={{ backgroundColor: "#2AC4F3" }}>
+        <Footer style={{ backgroundColor: "#2AC4F3" ,height:70 }}>
           <FooterTab style={{ backgroundColor: "#2AC4F3" }}>
             <Button
               vertical
@@ -48,7 +48,7 @@ export default (MainScreenNavigator = TabNavigator(
             >
               <Image
                 style={{ width: 35, height: 35 }}
-                source={{ uri: "https://i.imgur.com/6H1I7Z0.png" }}
+                source={{ uri: "https://i.imgur.com/MmArfaC.png" }}
               />
               <Text>Home</Text>
             </Button>
@@ -60,7 +60,7 @@ export default (MainScreenNavigator = TabNavigator(
             >
               <Image
                 style={{ height: 35, width: 35 }}
-                source={{ uri: "https://i.imgur.com/tIRxrIF.png" }}
+                source={{ uri: "https://i.imgur.com/1Ic1cDn.png" }}
               />
               <Text>Pesan</Text>
             </Button>
@@ -72,7 +72,7 @@ export default (MainScreenNavigator = TabNavigator(
             >
               <Image
                 style={{ width: 35, height: 35 }}
-                source={{ uri: "https://i.imgur.com/cam3znM.png" }}
+                source={{ uri: "https://i.imgur.com/v7DOAMj.png" }}
               />
               <Text>Kehadiran</Text>
             </Button>
@@ -84,7 +84,7 @@ export default (MainScreenNavigator = TabNavigator(
             >
               <Image
                 style={{ width: 35, height: 35 }}
-                source={{ uri: "https://i.imgur.com/2jsLpTT.png" }}
+                source={{ uri: "https://i.imgur.com/dx84mWK.png" }}
               />
               <Text>Nilai</Text>
             </Button>

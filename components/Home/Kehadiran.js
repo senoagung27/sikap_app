@@ -51,7 +51,7 @@ export default class Profile extends React.Component {
             </Button>
           </Left>
           <Body>
-            <H1 style={{ color: "white" }}>PROFILE</H1>
+            <H1 style={{ color: "white" }}>SIKAP</H1>
           </Body>
         </Header>
         <Content style={{ backgroundColor: "white" }}>

@@ -58,6 +58,8 @@ export default class Home extends React.Component {
             <H1 style={{ color: "white" }}>SIKAP</H1>
           </Body>
         </Header>
+        
+        <Content>
         <List>
           <Card style={{ height: 100 }}>
             <CardItem style={{ backgroundColor: "#4dd0e1" }}>
@@ -72,25 +74,114 @@ export default class Home extends React.Component {
             </CardItem>
           </Card>
         </List>
-        <List>
-          <Card style={{ height: 100 }}>
-            <CardItem style={{ backgroundColor: "white" }}>
-              <Body>
-                <H1>Hari ini</H1>
-                <Text>{tanggal}</Text>
-              </Body>  
-            </CardItem>
-          </Card>
-        </List>
-        <Content padder>
-          <Accordion
-            dataArray={dataArray}
-            icon="add"
-            expandedIcon="remove"
-            iconStyle={{ color: "green" }}
-            expandedIconStyle={{ color: "red" }}
-          />
-        </Content>
+        
+                  <List>
+            <Card style={{ flex: 0 }}>
+              <CardItem style={{ backgroundColor: "#cfeef9",height:700 }}>
+                <Body>
+                  <CardItem
+                    style={{
+                      backgroundColor: "white",
+                      height: 250,
+                      width:190,
+                      right:10,
+                    }}
+                  >
+                    <Body>
+                      <Image
+                        style={{ width: 50, height: 50, left: 35 }}
+                        source={{ uri: "https://i.imgur.com/rofgmYg.png" }}
+                      />
+                      <Text style={{ top: 10, left: 10 }}>BERKEMBANG</Text>
+                      <Text style={{ top: 20, left: 40 }}>MATEMATIKA</Text>
+                    </Body>
+                  </CardItem>
+
+                  <CardItem
+                    style={{
+                      backgroundColor: "white",
+                      height: 250,
+                      width:195,
+                      left:190,
+                      bottom:250,
+                      marginRight: 220,
+                    }}
+                  >
+                    <Body>
+                      <Image
+                        style={{ width: 50, height: 50, left: 35 }}
+                        source={{ uri: "https://i.imgur.com/rofgmYg.png" }}
+                      />
+                      <Text style={{ top: 10, left: 10 }}>BERKEMBANG</Text>
+                      <Text style={{ top: 20, left: 40 }}>IPS</Text>
+                    </Body>
+                  </CardItem>
+                  <CardItem
+                    style={{
+                      backgroundColor: "white",
+                      height: 250,
+                      width:190,
+                      right:10,
+                      bottom:240,
+                      marginRight: 220,
+                      marginBottom:-250,
+                    }}
+                  >
+                    <Body>
+                      <Image
+                        style={{ width: 50, height: 50, left: 35 }}
+                        source={{ uri: "https://i.imgur.com/rofgmYg.png" }}
+                      />
+                      <Text style={{ top: 10, left: 10 }}>BERKEMBANG</Text>
+                      <Text style={{ top: 20, left: 40 }}>IPA</Text>
+                    </Body>
+                  </CardItem>
+                  <CardItem
+                    style={{
+                      backgroundColor: "white",
+                      height: 250,
+                      width:195,
+                      left:190,
+                      bottom:240,
+                      marginRight: 220,
+                    }}
+                  >
+                    <Body>
+                      <Image
+                        style={{ width: 50, height: 50, left: 35 }}
+                        source={{ uri: "https://i.imgur.com/rofgmYg.png" }}
+                      />
+                      <Text style={{ top: 10, left: 10 }}>BERKEMBANG</Text>
+                      <Text style={{ top: 20, left: 40 }}>BING</Text>
+                    </Body>
+                  </CardItem>
+                  <CardItem
+                    style={{
+                      backgroundColor: "white",
+                      height: 160,
+                      width:395,
+                      right:10,
+                      bottom:230,
+                      marginRight: 220,
+                    }}
+                  >
+                    <Body>
+                      <Image
+                        style={{ width: 50, height: 50, left: 35 }}
+                        source={{ uri: "https://i.imgur.com/rofgmYg.png" }}
+                      />
+                      <Text style={{ top: 10, left: 10 }}>BERKEMBANG</Text>
+                      <Text style={{ top: 20, left: 40 }}>BING</Text>
+                    </Body>
+                  </CardItem>
+
+                </Body>
+              </CardItem>
+              </Card>
+          </List>
+        
+            
+         </Content>
       </Container>
     );
   }
