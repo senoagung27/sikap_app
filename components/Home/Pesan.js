@@ -56,7 +56,6 @@ export default class Pesan extends React.Component {
         </Header>
 
         <Content style={{ backgroundColor: "white" }}>
-        
         <Item>
             <Input placeholder='PENCARIAN'/>
             <Icon active name='search' />
