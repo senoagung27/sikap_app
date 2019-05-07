@@ -31,18 +31,8 @@ import {
   Footer,
   FooterTab,
 } from "native-base";
-const dataArray = [
-  { title: "First Element", content: "Lorem ipsum dolor sit amet" },
-  { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
-  { title: "Third Element", content: "Lorem ipsum dolor sit amet" },
-];
 export default class Home extends React.Component {
   render() {
-    var date = new Date().getDate();
-    var month = new Date().getMonth() + 1;
-    var year = new Date().getFullYear();
-    var tanggal = date + "-" + month + "-" + year;
-
     return (
       <Container style={{ backgroundColor: "white" }}>
         <Header style={{ backgroundColor: "#2AC4F3" }}>
@@ -66,10 +56,17 @@ export default class Home extends React.Component {
               <Body>
                 <H1 style={{ left: 90 }}>Putra Wahyu</H1>
                 <Text style={{ left: 100 }}>Kelas XII A (IPA)</Text>
+                <Text style={{ left: 100 }}>Pompes Anwar Sholihin</Text>
                 <Image
                   source={{ uri: "https://i.imgur.com/zBwTWJo.png" }}
                   style={{ height: 50, width: 50, bottom: 50, left: 30 }}
                 />
+                
+                <Image
+                  source={{ uri: "https://i.imgur.com/lZeRsfp.png" }}
+                  style={{ height: 30, width: 30, bottom: 90, left: 330 }}
+                />
+                
               </Body>
             </CardItem>
           </Card>
@@ -94,9 +91,10 @@ export default class Home extends React.Component {
                       />
                       <Text style={{ top: 10, left: 10 }}>BERKEMBANG</Text>
                       <Text style={{ top: 20, left: 40 }}>MATEMATIKA</Text>
+                     
                     </Body>
+                    
                   </CardItem>
-
                   <CardItem
                     style={{
                       backgroundColor: "white",

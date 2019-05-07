@@ -32,7 +32,7 @@ import {
   FooterTab,
 } from "native-base";
 
-export default class Pesan extends React.Component {
+export default class Pembayaran extends React.Component {
   render() {
     var date = new Date().getDate();
     var month = new Date().getMonth() + 1;

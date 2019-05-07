@@ -23,14 +23,14 @@ import {
   FooterTab,
 } from "native-base";
 import Kehadiran from "./Kehadiran";
-import Pesan from "./Pesan";
+import Pembayaran from "./Pembayaran";
 import Home from "./Home";
 import Nilai from "./Nilai";
 
 export default (MainScreenNavigator = TabNavigator(
   {
     Home: { screen: Home },
-    Pesan: { screen: Pesan },
+    Pembayaran: { screen: Pembayaran },
     Kehadiran: { screen: Kehadiran },
     Nilai: { screen: Nilai },
   },
@@ -55,14 +55,14 @@ export default (MainScreenNavigator = TabNavigator(
             <Button
               vertical
               active={props.navigationState.index === 1}
-              onPress={() => props.navigation.navigate("Pesan")}
+              onPress={() => props.navigation.navigate("Pembayaran")}
               style={{ backgroundColor: "#2AC4F3" }}
             >
               <Image
                 style={{ height: 35, width: 35 }}
                 source={{ uri: "https://i.imgur.com/1Ic1cDn.png" }}
               />
-              <Text>Pesan</Text>
+              <Text>Pembayaran</Text>
             </Button>
             <Button
               vertical
